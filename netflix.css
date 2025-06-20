@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+.heading{
+    font-weight: 600;
+}
+main{
+    overflow: hidden;
+}
+body {
+    background-color: black;
+}
+
+.top {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.651)), url(resimg/IN-en-20250602-TRIFECTA-perspective_27a3fdfa-126f-4148-b153-55d60b51be6a_large.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(2043px, 100vw);
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 77vw;
+    margin: auto;
+    position: relative;
+    top: 0;
+    padding-top: 1.3em;
+}
+
+.nav .logo img {
+    height: max(24px, 2.9vw);
+    translate: 0px 2px;
+}
+
+.navbtn .btn {
+    border: 1px solid rgb(109, 109, 109);
+    background-color: transparent;
+    padding: 5px 12px;
+    border-radius: 3px;
+    color: white;
+    margin-left: 6px;
+    font-weight: 400;
+    font-size: clamp(6px, 1.3vw, 15px);
+}
+
+.navbtn .red-btn {
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+.top .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    top: 17%;
+    width: max(65vw, 200px);
+    gap: 1.9vh;
+
+}
+
+.top .text .first {
+    max-width: 53vw;
+    font-size: calc(2.5vw + 1rem);
+    font-weight: 800;
+    text-align: center;
+    margin: auto;
+}
+
+.top .text .second {
+    font-size: max(13px, 1.4vw);
+    font-weight: 600;
+}
+
+.top .text .third {
+    margin-top: 3vh;
+    font-size: max(11px, 1.1vw);
+}
+
+.email-fill {
+    gap: 8px;
+    margin: auto;
+    margin-top: 1em;
+    width: 43vw;
+    height: 8.7vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-fill button {
+    background-color: red;
+    height: 100%;
+    width: 35%;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+.email-fill input {
+    background-color: transparent;
+    border: 1px solid rgb(102, 102, 102);
+    height: 100%;
+    width: 65%;
+    border-radius: 3px;
+    padding: 0.43em 1em;
+    font-size: 14px;
+}
+
+.email-fill input::placeholder {
+    color: rgb(212, 211, 211);
+}
+
+@media (max-width : 675px) {
+    .email-fill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 13vh;
+        width: 65vw;
+    }
+
+    .email-fill button {
+        font-size: 3vw;
+
+    }
+
+    .email-fill input {
+        width: 100%;
+    }
+}
+
+@media (max-width : 450px) {
+    .top {
+        height: 85vh;
+    }
+
+    .nav {
+        width: 86vw;
+    }
+
+    .top .text {
+        top: 15%;
+    }
+
+    .top .text .first {
+        font-size: calc(4vw + 0.5rem);
+    }
+
+    .top .text .second {
+        font-size: calc(2vw + 0.6rem);
+    }
+
+    .top .text .third {
+        font-size: calc(1vw + 0.53rem);
+    }
+
+}
+
+.curve-border {
+    height: 30px;
+    width: 100%;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    border-top-right-radius: 244rem 6rem;
+    border-top-left-radius: 244rem 6rem;
+    position: relative;
+    top: -25px;
+    display: flex;
+}
+
+/* Fix the curve later*/
+.curve-helper {
+    height: 45px;
+    margin-top: 5px;
+    width: 100%;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    border-top-right-radius: 244rem 6rem;
+    border-top-left-radius: 244rem 6rem;
+}
+
+/* .trend {
+    width: 85vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+.trend-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.trend-cards .card {
+    margin: 1.3rem;
+    height: 15.9rem;
+    width: 11.2rem;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 0.5rem;
+    background-repeat: no-repeat;
+}
+.card-1{
+    background-image: url(resimg/5.webp);
+}
+.card-2{
+    background-image: url(resimg/card\ hit.webp);
+}
+.card-3{
+    background-image: url(resimg/retro.webp);
+}
+.card-4{
+    background-image: url(resimg/4.webp);
+}
+.card-5{
+    background-image: url(resimg/chava.webp);
+} */
+
+
+.trend {
+    width: 85vw;
+    margin: auto;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-y: hidden;
+}
+
+.trend-cards {
+    display: flex;
+    justify-content: flex-start; /* Change from center to flex-start */
+    min-width: min-content; /* Ensure container doesn't shrink smaller than content */
+    gap: 1.3rem; /* Use gap instead of margin for better spacing */
+    padding: 0 1.3rem; /* Add padding to maintain spacing on edges */
+}
+
+.trend-cards .card {
+    flex: 0 0 11.2rem; /* flex-grow: 0, flex-shrink: 0, flex-basis: 11.2rem */
+    height: 15.9rem;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 0.5rem;
+    background-repeat: no-repeat;
+}
+
+.card-1{
+    background-image: url(resimg/5.webp);
+}
+.card-2{
+    background-image: url(resimg/card\ hit.webp);
+}
+.card-3{
+    background-image: url(resimg/retro.webp);
+}
+.card-4{
+    background-image: url(resimg/4.webp);
+}
+.card-5{
+    background-image: url(resimg/chava.webp);
+}
+
+/* Optional: Hide scrollbar for cleaner look (webkit browsers) */
+.trend::-webkit-scrollbar {
+    display: none;
+}
+
+/* Optional: Hide scrollbar for Firefox */
+.trend {
+    scrollbar-width: none;
+}
+.card .trend-no h2 {
+    font-size: 6.3rem;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1.7px;
+    position: relative;
+    top: 7.6rem;
+    right: 1.2rem;
+}
+.reason{
+    width: 85vw;
+    margin: auto;
+    padding: 4rem 1.5rem;
+}
+.reason-cards{
+    display: grid;
+    margin-top: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+}
+.grid-card{
+    height: 318px;
+    background-color: rgb(0, 0, 95);
+    border-radius: 1rem;
+}
