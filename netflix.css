@@ -7,12 +7,15 @@
     box-sizing: border-box;
     color: white;
 }
-.heading{
+
+.heading {
     font-weight: 600;
 }
-main{
+
+main {
     overflow: hidden;
 }
+
 body {
     background-color: black;
 }
@@ -189,60 +192,24 @@ body {
     border-top-left-radius: 244rem 6rem;
 }
 
-/* .trend {
-    width: 85vw;
-    margin: auto;
-    overflow: hidden;
-}
-
-.trend-cards {
-    display: flex;
-    justify-content: center;
-}
-
-.trend-cards .card {
-    margin: 1.3rem;
-    height: 15.9rem;
-    width: 11.2rem;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 0.5rem;
-    background-repeat: no-repeat;
-}
-.card-1{
-    background-image: url(resimg/5.webp);
-}
-.card-2{
-    background-image: url(resimg/card\ hit.webp);
-}
-.card-3{
-    background-image: url(resimg/retro.webp);
-}
-.card-4{
-    background-image: url(resimg/4.webp);
-}
-.card-5{
-    background-image: url(resimg/chava.webp);
-} */
-
-
 .trend {
     width: 85vw;
     margin: auto;
-    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-x: auto;
     overflow-y: hidden;
 }
 
 .trend-cards {
     display: flex;
-    justify-content: flex-start; /* Change from center to flex-start */
-    min-width: min-content; /* Ensure container doesn't shrink smaller than content */
-    gap: 1.3rem; /* Use gap instead of margin for better spacing */
-    padding: 0 1.3rem; /* Add padding to maintain spacing on edges */
+    justify-content: flex-start;
+    min-width: min-content;
+    gap: 1.3rem;
+    padding: 0 1.3rem;
 }
 
 .trend-cards .card {
-    flex: 0 0 11.2rem; /* flex-grow: 0, flex-shrink: 0, flex-basis: 11.2rem */
+    flex: 0 0 11.2rem;
+    /* flex-grow: 0, flex-shrink: 0, flex-basis: 11.2rem */
     height: 15.9rem;
     background-size: cover;
     background-position: center center;
@@ -250,31 +217,26 @@ body {
     background-repeat: no-repeat;
 }
 
-.card-1{
+.card-1 {
     background-image: url(resimg/5.webp);
 }
-.card-2{
+
+.card-2 {
     background-image: url(resimg/card\ hit.webp);
 }
-.card-3{
+
+.card-3 {
     background-image: url(resimg/retro.webp);
 }
-.card-4{
+
+.card-4 {
     background-image: url(resimg/4.webp);
 }
-.card-5{
+
+.card-5 {
     background-image: url(resimg/chava.webp);
 }
 
-/* Optional: Hide scrollbar for cleaner look (webkit browsers) */
-.trend::-webkit-scrollbar {
-    display: none;
-}
-
-/* Optional: Hide scrollbar for Firefox */
-.trend {
-    scrollbar-width: none;
-}
 .card .trend-no h2 {
     font-size: 6.3rem;
     font-weight: 800;
@@ -286,19 +248,22 @@ body {
     top: 7.6rem;
     right: 1.2rem;
 }
-.reason{
+
+.reason {
     width: 85vw;
     margin: auto;
     padding: 4rem 1.5rem;
 }
-.reason-cards{
+
+.reason-cards {
     display: grid;
     margin-top: 1rem;
     gap: 1rem;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
 }
-.grid-card{
+
+.grid-card {
     height: 318px;
     background-color: rgb(0, 0, 95);
     border-radius: 1rem;
