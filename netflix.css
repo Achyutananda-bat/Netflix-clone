@@ -250,7 +250,7 @@ body {
 }
 
 .reason {
-    width: 85vw;
+    width: 85%;
     margin: auto;
     padding: 4rem 1.5rem;
 }
@@ -265,6 +265,17 @@ body {
 
 .grid-card {
     height: 318px;
-    background-color: rgb(0, 0, 95);
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    padding: 1.7rem 1rem;
     border-radius: 1rem;
+    position: relative;
 }
+
+.grid-card img{
+    position: absolute;
+    bottom: 1.4rem;
+    right: 0.8rem;
+}
+/* All the grid section is set just adjust it for smaller devices handle media queries */
+/* for smaller devices the width 100% ans decrease the hieght of cards */
+/* center the trending section */
