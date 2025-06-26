@@ -8,6 +8,9 @@
     color: white;
 }
 
+h1, h2, h3{
+    font-weight: 600;
+}
 .heading {
     font-weight: 600;
 }
@@ -21,11 +24,11 @@ body {
 }
 
 .top {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.651)), url(resimg/IN-en-20250602-TRIFECTA-perspective_27a3fdfa-126f-4148-b153-55d60b51be6a_large.jpg);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.651)), url(IMAGES/IN-en-20250602-TRIFECTA-perspective_27a3fdfa-126f-4148-b153-55d60b51be6a_large.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(2043px, 100vw);
-    height: 100vh;
+    background-size: max(2043px, 100%);
+    height: 655px;
 }
 
 .nav {
@@ -44,21 +47,23 @@ body {
     translate: 0px 2px;
 }
 
-.navbtn .btn {
-    border: 1px solid rgb(109, 109, 109);
-    background-color: transparent;
-    padding: 5px 12px;
-    border-radius: 3px;
-    color: white;
-    margin-left: 6px;
-    font-weight: 400;
-    font-size: clamp(6px, 1.3vw, 15px);
+.nav-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-btn .lang-btn select{
+    margin-bottom: 0rem;
 }
 
-.navbtn .red-btn {
+.red-btn {
     background-color: red;
     border: none;
     color: white;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 400;
+    padding: 0.2rem 1rem;
 }
 
 .top .text {
@@ -103,6 +108,7 @@ body {
 
 .email-fill button {
     background-color: red;
+    color: white;
     height: 100%;
     width: 35%;
     border: none;
@@ -126,6 +132,9 @@ body {
 }
 
 @media (max-width : 675px) {
+    .top{
+        height: 575px;
+    }
     .email-fill {
         display: flex;
         flex-direction: column;
@@ -193,7 +202,7 @@ body {
 }
 
 .trend {
-    width: 85vw;
+    width: min(80%, 1600px);
     margin: auto;
     overflow-x: auto;
     overflow-y: hidden;
@@ -203,8 +212,8 @@ body {
     display: flex;
     justify-content: flex-start;
     min-width: min-content;
-    gap: 1.3rem;
-    padding: 0 1.3rem;
+    gap: 3.3rem;
+    padding: 0rem 2rem;
 }
 
 .trend-cards .card {
@@ -218,23 +227,23 @@ body {
 }
 
 .card-1 {
-    background-image: url(resimg/5.webp);
+    background-image: url(IMAGES/5.webp);
 }
 
 .card-2 {
-    background-image: url(resimg/card\ hit.webp);
+    background-image: url(IMAGES/card\ hit.webp);
 }
 
 .card-3 {
-    background-image: url(resimg/retro.webp);
+    background-image: url(IMAGES/retro.webp);
 }
 
 .card-4 {
-    background-image: url(resimg/4.webp);
+    background-image: url(IMAGES/4.webp);
 }
 
 .card-5 {
-    background-image: url(resimg/chava.webp);
+    background-image: url(IMAGES/chava.webp);
 }
 
 .card .trend-no h2 {
@@ -250,7 +259,8 @@ body {
 }
 
 .reason {
-    width: 85%;
+    /* 85 */
+    width: min(83%, 1600px);
     margin: auto;
     padding: 4rem 1.5rem;
 }
@@ -260,7 +270,7 @@ body {
     margin-top: 1rem;
     gap: 1rem;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(237px, 1fr));
 }
 
 .grid-card {
@@ -270,12 +280,134 @@ body {
     border-radius: 1rem;
     position: relative;
 }
+.grid-card h3{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.grid-card p{
+    color: rgb(189, 187, 187);
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva,;
+}
 
 .grid-card img{
     position: absolute;
     bottom: 1.4rem;
     right: 0.8rem;
 }
-/* All the grid section is set just adjust it for smaller devices handle media queries */
 /* for smaller devices the width 100% ans decrease the hieght of cards */
-/* center the trending section */
+/* handle the media queries */
+.FAQS{
+    width: min(83%, 1600px);
+    margin: auto;
+    padding: 0rem 1.5rem;
+    margin-bottom: 4.5rem;
+}
+.FAQS h2{
+    margin-bottom: 1rem;
+}
+.FAQS .Q-box{
+    height: 5rem;
+    width: 100%;
+    margin: auto;
+    background-color: #2d2d2d;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+.FAQS .Q-box:hover{
+    background-color: #353434;
+}
+
+.email-end{
+    width: min(83%, 1600px);
+    margin: auto;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.email-input-last{
+    width: 70%;
+    height: 3.55rem;
+    margin: auto;
+    display: flex;
+    gap: 0.6em;
+    margin-top: 1rem;
+}
+.email-input-last input{
+    flex: 1;
+    background-color: #0f0f0f;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 3px;
+    padding: 0rem 1rem;
+}
+.email-input-last input::placeholder{
+    color: rgb(206, 206, 206);
+    font-weight: 400;
+    font-size: 1rem;
+}
+.email-input-last button{
+    width: 27%;
+    background : rgb(229, 9, 20);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+footer{
+    color: #353434;
+    width: min(83%, 1600px);
+    margin: auto;
+    padding: 0rem 1.5rem;
+    font-weight: 300;
+}
+footer section div, a, select, button{
+    color: #ffffffb3;
+}
+
+footer .telli{
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+footer .grid-anchors{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+    gap: 0.6rem;
+    font-size: 0.8rem;
+    margin-bottom: 4rem;
+}
+.lang-btn select{
+    background-color: transparent;
+    padding: 0.06rem 1.3rem;
+    font-weight: 400;
+    border-radius: 3px;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+#netflix-ind{
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.terms{
+    margin-bottom: 8rem;
+    font-size: 0.75rem;
+    color: #c9c9c9b3;
+}
+.terms button{
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+    color: skyblue;
+}
