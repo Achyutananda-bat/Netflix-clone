@@ -1,0 +1,227 @@
+@media (min-width : 1920px) {
+    html {
+        font-size: 106%;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .top {
+        height: 920px;
+    }
+
+    .top .text {
+        top: 30%;
+    }
+
+    .top .text .first {
+        font-size: 3.5rem;
+    }
+
+    .email-fill {
+        width: 33%;
+    }
+
+    .email-fill input {
+        width: 67%;
+    }
+
+    .email-fill button {
+        width: 32%;
+    }
+
+    .reason-cards {
+        grid-template-columns: repeat(4, 291px);
+    }
+
+    .grid-card {
+        height: 19rem;
+        padding: 1.7rem 1.5rem;
+    }
+}
+
+@media (max-width : 1260px) {
+    .nav {
+        width: 85%;
+    }
+
+    .top .text .third {
+        font-size: 1rem;
+        margin-top: 0.6rem;
+    }
+
+    .top .text .first {
+        font-size: 2.3rem;
+    }
+
+    .email-fill {
+        width: 65%;
+    }
+
+    .email-fill button {
+        width: 40%;
+        font-size: 1.2rem;
+    }
+
+    .trend {
+        width: 85%;
+    }
+
+    .trend-cards {
+        gap: 3rem;
+    }
+
+    .card .trend-no h2 {
+        font-size: 5rem;
+        top: 6.5rem;
+    }
+
+    .trend-cards .card {
+        flex: 0 0 9rem;
+        height: 13rem;
+    }
+
+    .reason {
+        width: 85%;
+        padding: 0rem;
+        margin-top: 4rem;
+    }
+
+    .reason-cards {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+    .grid-card {
+        height: 14rem;
+    }
+    footer {
+        padding: 0;
+    }
+    .FAQS {
+        width: 85%;
+        padding: 0;
+        margin-top: 4rem;
+    }
+     .email-input-last button {
+        font-size: 1rem;
+    }
+}
+@media (max-width : 700px) {
+    .email-fill {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media (max-width : 500px) {
+    html {
+        font-size: 80%;
+    }
+
+    br {
+        display: none;
+    }
+
+    h2,
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .nav {
+        width: 85%;
+    }
+
+    .nav .logo img {
+        height: 1.8rem;
+    }
+
+    .nav-btn {
+        flex-wrap: wrap;
+    }
+
+    .top {
+        height: 570px;
+    }
+
+    .top .text {
+        top: 10%;
+        width: 85%;
+    }
+
+    .top .text .third {
+        font-size: 1.2rem;
+        margin-top: 0.6rem;
+    }
+
+    .top .text .first {
+        font-size: 2.3rem;
+    }
+
+    .email-fill {
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .email-fill input {
+        width: 100%;
+    }
+
+    .email-fill button {
+        width: 60%;
+    }
+
+    .trend {
+        width: 85%;
+    }
+
+    .trend-cards {
+        gap: 1rem;
+    }
+
+    .card .trend-no h2 {
+        font-size: 5rem;
+        top: 6.5rem;
+    }
+
+    .trend-cards .card {
+        flex: 0 0 9rem;
+        height: 13rem;
+    }
+
+    .reason {
+        width: 85%;
+        padding: 0rem;
+        margin-top: 3.5rem;
+    }
+
+    .grid-card {
+        height: 16rem;
+    }
+    .reason-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .FAQS {
+        width: 85%;
+        padding: 0;
+        margin-top: 4rem;
+    }
+
+    .email-input-last {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .email-input-last button {
+        width: 60%;
+    }
+
+    footer {
+        padding: 0rem;
+    }
+}
